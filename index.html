@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album Showcase</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.2/color-thief.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <!-- Splash Screen -->
+    <div id="splash-screen" role="banner" aria-hidden="true">
+        <div id="top-reel" class="reel"></div>
+        <div id="bottom-reel" class="reel"></div>
+        <h1>Hitarthi Bhinde: Final Project</h1>
+        <p>"No matter what happens in life, be good to people. Being good to people is a wonderful legacy to leave behind." – Taylor Swift</p>
+        <button id="enter-button" aria-label="Start the journey">Start the journey</button>
+    </div>
+
+    <!-- Main Content -->
+    <div id="album-container" role="main">
+        <div id="carousel" role="listbox" aria-label="Album images carousel"></div>
+        <div id="lyrics-container">
+            <h1 id="album-name" aria-live="polite">Album Name</h1>
+            <h2 id="song-name" aria-live="polite">Song Name</h2>
+            <p id="lyrics"></p>
+        </div>
+    </div>
+
+    <!-- Background Music -->
+     <audio id="background-music" loop>
+        <source id="audio-source" src="" type="audio/mpeg">
+    </audio>
+
+    <!-- <audio id="background-music" loop>
+        <source src="Wildestdreams.mp3" type="audio/mpeg">
+    </audio> -->
+
+    <script src="script.js" defer></script>
+</body>
+</html>
